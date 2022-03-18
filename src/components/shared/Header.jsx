@@ -14,16 +14,17 @@ function Header() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/about">About us</Nav.Link>
-                            <Nav.Link href="/contact">Contact</Nav.Link>
+                            <Nav.Link href="/">Accueil</Nav.Link>
                             <NavDropdown title="Blog" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.1">Afficher tous</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Ajouter un article</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Chercher</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
+                            <Nav.Link href="/about">A propos</Nav.Link>
+                            <Nav.Link href="/contact">Contact</Nav.Link>
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
