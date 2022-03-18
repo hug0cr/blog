@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Link} from 'react-router-dom';
 
 import { Card } from 'react-bootstrap';
 
@@ -58,14 +59,15 @@ const postsState = () => {
     } else {
         return (
             posts.map((post, index) => {
+                const picture = cookingPictures[Math.floor(Math.random() * cookingPictures.length)];
                 return (
                     <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-around">
                         <Card className="my-2" style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={cookingPictures[Math.floor(Math.random() * cookingPictures.length)]} />
+                            <Card.Img variant="top" src={picture} />
                             <Card.Body>
                                 <Card.Title>{post.title}</Card.Title>
                                 <Card.Text>{post.body}</Card.Text>
-                                <Card.Link href={'post/'+post.id}>Lire la suite</Card.Link>
+                                <Link to={`/post/${post.id}`}>Lire la suite</Link>
                             </Card.Body>
                         </Card>
                     </div>
