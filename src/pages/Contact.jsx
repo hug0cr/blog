@@ -31,7 +31,7 @@ function Contact() {
                         <Form.Label >Sujet</Form.Label>
                         <Form.Control   />
                     </Form.Group>
-                    
+
                     <Form.Group className="mb-2" controlId="formGridMessage" >
                         <Form.Label>Votre message</Form.Label>
                         <Form.Control as="textarea" placeholder="..." />
@@ -41,22 +41,6 @@ function Contact() {
                         Envoyer
                     </Button>
                 </Form>
-            </Container>
-            <Container className='bg-dark ' style={{width:'60%', marginTop:'10px',  padding:'15px' }}>
-                <Row>
-                    <Col className="myAddress" style={{alignContent: 'center'}}>
-                        <h6 className='text-warning'>Address</h6>
-                        <p className='text-light'>Web Force 3 - Paris</p>
-                    </Col>
-                    <Col className="myNumber">
-                        <h6 className='text-warning'>Téléphone</h6>
-                        <p className='text-light'>+ 33334567</p>
-                    </Col>
-                    <Col className="address">
-                        <h6 className='text-warning'>Email</h6>
-                        <p className='text-light'>WF3_group6@gmail.com</p>
-                    </Col>
-                </Row>
             </Container>
         </div>
     );
