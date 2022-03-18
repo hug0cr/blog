@@ -1,6 +1,8 @@
 function Blog() {
     return (
-        <div></div>
+        <div>
+            <h1>Page de Blog</h1>
+        </div>
     );
 }
 

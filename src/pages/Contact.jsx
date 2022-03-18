@@ -1,6 +1,8 @@
 function Contact() {
     return (
-        <div></div>
+        <div>
+            <h1>Page de contact</h1>
+        </div>
     );
 }
 
