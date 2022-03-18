@@ -9,6 +9,19 @@ import {
 } from 'react-bootstrap';
 
 function PostItem() {
+    const cookingPictures = [
+        'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+        'https://images.pexels.com/photos/2284166/pexels-photo-2284166.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        'https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        'https://images.pexels.com/photos/175753/pexels-photo-175753.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        'https://images.pexels.com/photos/1040685/pexels-photo-1040685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        'https://images.pexels.com/photos/2113556/pexels-photo-2113556.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        'https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        'https://images.pexels.com/photos/128402/pexels-photo-128402.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    ];
+
     let [post, setPost] = useState(null);
     const { id } = useParams();
 
@@ -32,7 +45,7 @@ function PostItem() {
                     <div style={{textAlign: "center"}}>
                         <h1>{post.title}</h1>
                         <div style={{display: "flex", justifyContent: "center"}}>
-                        <img src="https://thumbs.dreamstime.com/z/fantasy-tree-house-deep-forest-104765716.jpg" style={{height: "500px", width: "1000px", borderRadius: "50%"}} />
+                        <img src={cookingPictures[Math.floor(Math.random() * cookingPictures.length)]} style={{height: "500px", width: "1000px", borderRadius: "50%"}} />
                     </div>
                 <div>
                 <p>{post.body}</p>
