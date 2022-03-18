@@ -65,7 +65,7 @@ const postsState = () => {
                             <Card.Body>
                                 <Card.Title>{post.title}</Card.Title>
                                 <Card.Text>{post.body}</Card.Text>
-                                <Card.Link href="#">Lire la suite</Card.Link>
+                                <Card.Link href={'post/'+post.id}>Lire la suite</Card.Link>
                             </Card.Body>
                         </Card>
                     </div>
@@ -79,11 +79,6 @@ const postsState = () => {
 
 return (
     <div className="container">
-        <div className="row">
-            <div className="col-12 text-center my-3">
-                <h1>Blog</h1>
-            </div>
-        </div>
         <div className="row">
             <div className="col-12 d-flex justify-content-end m-2 px-5">
                 <div className="col-3">
