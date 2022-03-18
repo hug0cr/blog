@@ -12,7 +12,7 @@ function Footer() {
     }
     return (
         <footer>
-            <Container className="bg-light pt-2" style={{width:'100%'}}>
+            <Container fluid className="bg-light pt-2" style={{width:'100%'}}>
                 <Row id="info">
                     <Col id='col-left' className='col-4 px-4'> 
                         <h5  className='text-dark'>Cuisine du monde</h5>
