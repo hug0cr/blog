@@ -1,6 +1,6 @@
-import {Container,
-    Row,
-    Col
+import { Row,
+    Col,
+    Container
 } from 'react-bootstrap';
 
 import './Footer.css';
@@ -14,7 +14,7 @@ function Footer() {
     }
     return (
         <footer id='footer'>
-            <Container fluid className="bg-light pt-2">
+            <Container fluid className="bg-light">
                 <Row id="info">
                     <Col id='col-left' className='col-4 px-4'> 
                         <h5  className='text-dark'>Cuisine du monde</h5>

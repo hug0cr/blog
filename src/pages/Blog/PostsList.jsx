@@ -63,7 +63,7 @@ const postsState = () => {
                 return (
                     <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-around">
                         <Card className="my-2" style={{ width: '20rem'}}>
-                            <Card.Img variant="top" src={picture} />
+                            <Card.Img variant="top" src={picture} style={{ height: '200px'}}/>
                             <Card.Body>
                                 <Card.Title>{post.title}</Card.Title>
                                 <Card.Text>{post.body}</Card.Text>
