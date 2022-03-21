@@ -1,0 +1,9 @@
+.img1 {
+    width: 100%;
+    max-width: 24rem;
+}
+
+.containerImg {
+    justify-content: center;
+    align-self: center;
+}
