@@ -3,6 +3,8 @@ import {Container,
     Col
 } from 'react-bootstrap';
 
+import './Footer.css';
+
 function Footer() {
     let myStyle = {
         p:{
@@ -11,8 +13,8 @@ function Footer() {
         }
     }
     return (
-        <footer>
-            <Container fluid className="bg-light pt-2 fixed-bottom">
+        <footer id='footer'>
+            <Container fluid className="bg-light pt-2">
                 <Row id="info">
                     <Col id='col-left' className='col-4 px-4'> 
                         <h5  className='text-dark'>Cuisine du monde</h5>

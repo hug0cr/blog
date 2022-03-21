@@ -62,7 +62,7 @@ const postsState = () => {
                 const picture = cookingPictures[Math.floor(Math.random() * cookingPictures.length)];
                 return (
                     <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-around">
-                        <Card className="my-2" style={{ width: '18rem' }}>
+                        <Card className="my-2" style={{ width: '20rem'}}>
                             <Card.Img variant="top" src={picture} />
                             <Card.Body>
                                 <Card.Title>{post.title}</Card.Title>
